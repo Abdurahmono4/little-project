@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css2?family=Varela&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Varela", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./images/best.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.show-btn {
+  padding: 8px 12px;
+  background-color: #0e9e18;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+
+.show-btn:hover {
+  background-color: #3a3d40;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  color: #222;
+  font-size: 20px;
+}
+
+.modal-title {
+  margin-bottom: 15px;
+}
+
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
